@@ -12,3 +12,4 @@ En caso de que el vehiculo no puede ser reparado, debe especificarse el motivo.
 Cuando el mecanido especifique como reparo el vehiculo o el motivo por el cual no puedo repararlo, el jefe de mecanica debe ver el caso y puede: Remitirlo a otro mecanico o remitirlo a atencion al cliente para ser devuelto.
 Se debe registrar la entrega del vehiculo al propietari@, colocando la fecha, hora y algun comentario adicional. 
 El jefe de mecanica y/o atencion al cliente deben poder generar un reporte de los vehiculos recibidos, reparados, no reparados y/o pendientes.
+El rol de administrador tiene acceso a todas las vistas, el rol del mecánico solo tiene acceso a su lista de asignaciones y el rol de servicio al cliente tiene acceso al registro de cliente, automóviles y las entregas de vehículos. 
