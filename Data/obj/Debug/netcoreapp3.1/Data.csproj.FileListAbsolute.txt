@@ -1,0 +1,5 @@
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\Data.dll
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs

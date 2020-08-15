@@ -1,0 +1,123 @@
+﻿@page
+@model TallerMecanica.Pages.Inicio.CrearEmModel
+@{
+    ViewData["Title"] = "CrearEm";
+}
+
+<div class="container">
+    <h1>Editar Cuenta</h1>
+    <hr>
+    <form method="post" role="form">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="well">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <label asp-for="empleadoM.Nombre"></label>
+                        <input type="text" asp-for="empleadoM.Nombre" class="form-control" placeholder="Nombre" tabindex="1">
+                        <span asp-validation-for="empleadoM.Nombre " class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <label asp-for="empleadoM.Apellido"></label>
+                        <input type="text" asp-for="empleadoM.Apellido" class="form-control" placeholder="Nombre" tabindex="1">
+                        <span asp-validation-for="empleadoM.Apellido " class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <label asp-for="empleadoM.Correo"></label>
+                        <input asp-for="empleadoM.Correo" type="email" class="form-control" placeholder="Email" tabindex="4">
+                        <span asp-validation-for="empleadoM.Correo " class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <label asp-for="empleadoM.Telefono"></label>
+                        <input asp-for="empleadoM.Telefono"  class="form-control" placeholder="Celular" tabindex="3">
+                        <span asp-validation-for="empleadoM.Correo" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="empleadoM.Direccion"></label>
+                <input asp-for="empleadoM.Direccion" type="text" class="form-control" placeholder="Direccion " tabindex="5">
+                <span asp-validation-for="empleadoM.Direccion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group col-4">
+                <label asp-for="empleadoM.Contrasena"></label>
+                <input asp-for="empleadoM.Contrasena" type="password" class="form-control" placeholder="Contraseña " tabindex="6">
+                <span asp-validation-for="empleadoM.Contrasena" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4">
+
+                    <div class="form-group">
+                        <label asp-for="empleadoM.Sexo"></label>
+                        <select asp-for="empleadoM.Sexo" type="text" class="form-control" placeholder="Sexo " tabindex="5">
+                            <option value="" selected disabled>--Seleccinar--</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                        <span asp-validation-for="empleadoM.Sexo" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-4">
+
+                    <div class="form-group">
+                        <label asp-for="empleadoM.marca_vehiculo"></label>
+                        <select asp-for="empleadoM.marca_vehiculo" type="text" class="form-control" placeholder="Sexo " tabindex="5">
+                            <option value="" selected disabled>--Seleccinar--</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyunday">Hyunday</option>
+                            <option value="Null">Null</option>
+                        </select>
+                        <span asp-validation-for="empleadoM.marca_vehiculo" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4">
+
+                    <div class="form-group">
+                        <label asp-for="empleadoM.Roles"></label>
+                        <select asp-for="empleadoM.Roles" class="form-control">
+                            <option value="" selected disabled>--Seleccionar--</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Mecanico">Mecanico</option>
+                            <option value="Secretaria">Secretaria</option>
+                        </select>
+                        <span asp-validation-for="empleadoM.Roles" class="text-danger"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-4 col-md-4">
+                        <button type="submit" value="Crear Nuevo" class="btn btn-primary form-control">
+                            Guardar datos
+                        </button>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <a asp-page="Index" class="btn btn-success"> Volver lista</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

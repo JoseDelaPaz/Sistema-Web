@@ -1,0 +1,74 @@
+﻿@page
+@model TallerMecanica.Pages.ServicioCliente.recibido.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+@if (Model.Mensaje != null)
+{
+    <div class="alert alert-dismissible alert-info" role="alert">
+        <button class="close" type="button" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        @Model.Mensaje
+    </div>
+}
+
+<div class=" container row">
+    <div class="border-bottom col-6">
+        <h2  class="text-info">Listado de Asignacion</h2>
+    </div>
+    <div class="col-6 text-right ">
+        <a asp-page="Listado" class="btn btn-primary ">Lista de Entrega</a>
+    </div>
+</div>
+<br />
+<br />
+  
+        @if (Model.getEmp.Count() > 0)
+        {
+            <table class="table table-striped border">
+                <thead>
+                    <tr class="table-secondary">
+                        <th>#</th>
+                        <th>Nombre </th>
+                        <th>Marca </th>
+                        <th>Marcar </th>
+                        <th>Matricula</th>
+                        <th>Estado</th>
+                        <th>Comentatio</th>
+                        <th>Aciones</th>
+                    </tr>
+
+                </thead>
+
+
+                @foreach (var C in Model.getEmp)
+                {
+                    <tbody>
+                    <tr>
+                        <td>@C.EmpleadoVehiculosID</td>
+                        <td>@C.empleadoVehiculof.Nombre</td>
+                        <td>@C.automovilEmpleadof.Marca</td>
+                        <td>@C.automovilEmpleadof.Modelo</td>
+                        <td>@C.automovilEmpleadof.Matricula</td>
+                        <td>@C.Estado</td>
+                        <td>@C.Detalle_Reparaciion</td>
+                        <td>
+                            <a class='btn btn-info btn-xs' asp-route-id="@C.EmpleadoVehiculosID" asp-page="Detalles"><span class="glyphicon glyphicon-edit"></span>Detalles</a>
+                            <a class='btn btn-warning btn-xs' asp-route-id="@C.EmpleadoVehiculosID" asp-page="Entrega"><span class="glyphicon glyphicon-edit"></span>Entrga</a>
+
+                        </td>
+                    </tr>
+                        </tbody>
+                }
+
+            </table>
+        }
+        else
+        {
+            <div class="text-info text-center">
+                <h2>no hay regitros</h2>
+            </div>
+        }
+

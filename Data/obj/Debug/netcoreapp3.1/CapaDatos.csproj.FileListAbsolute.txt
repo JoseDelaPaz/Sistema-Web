@@ -1,0 +1,15 @@
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\CapaDatos.deps.json
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\CapaDatos.runtimeconfig.json
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\CapaDatos.runtimeconfig.dev.json
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\CapaDatos.dll
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\CapaDatos.pdb
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\CapaModelos.dll
+D:\jose\TallerMecanica\Data\bin\Debug\netcoreapp3.1\CapaModelos.pdb
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.csprojAssemblyReference.cache
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.AssemblyInfoInputs.cache
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.AssemblyInfo.cs
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.csproj.CoreCompileInputs.cache
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.csproj.CopyComplete
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.dll
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.pdb
+D:\jose\TallerMecanica\Data\obj\Debug\netcoreapp3.1\CapaDatos.genruntimeconfig.cache

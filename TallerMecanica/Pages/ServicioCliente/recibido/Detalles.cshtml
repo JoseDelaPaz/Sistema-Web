@@ -1,0 +1,54 @@
+﻿@page
+@model TallerMecanica.Pages.ServicioCliente.recibido.DetallesModel
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<div>
+    <h4>AutomovilM</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nombre del Mecanico
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoVehiculos.empleadoVehiculof.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            Matricula
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoVehiculos.automovilEmpleadof.Matricula)
+        </dd>
+        <dt class="col-sm-2">
+            Marca
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoVehiculos.automovilEmpleadof.Marca)
+        </dd>
+        <dt class="col-sm-2">
+            Modelo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoVehiculos.automovilEmpleadof.Modelo)
+        </dd>
+        <dt class="col-sm-2">
+           Estado
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoVehiculos.Estado)
+        </dd>
+        <dt class="col-sm-2">
+          Detalles de la reparacion
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoVehiculos.Detalle_Reparaciion)
+        </dd>
+    </dl>
+</div>
+
+
+<div>
+    <a asp-page="Index" class="btn btn-secondary btn-sm">Volver A Lista</a>
+
+</div>

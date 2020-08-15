@@ -1,0 +1,59 @@
+﻿@page
+@model TallerMecanica.Pages.Mecanico.editarModel
+@{
+    ViewData["Title"] = "editar";
+}
+
+
+<h2 class="text-info">Formulario de clientes </h2>
+
+<div class="border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @*<input type="hidden" asp-for="clientes.ID"/>*@
+        <div class="container" style="padding:30px">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="GetEmpleado.Estado"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <select asp-for="GetEmpleado.Estado" class="form-control" required>
+                            <option value="En_Espera" selected>--En Espera--</option>
+                            <option value="En_proceso" >--En Proceso--</option>
+                            <option value="Repado">--Reparado--</option>
+                            <option value="No_Repado" >--No Reparado--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="GetEmpleado.Detalle_Reparaciion"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <textarea asp-for="GetEmpleado.Detalle_Reparaciion" class="form-control" required></textarea>         
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <button type="submit" value="Crear Datos" class="btn btn-primary form-control">
+                        Guardar Datos
+                    </button>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <a asp-page="Index" class="btn btn-success"> Volver lista</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+

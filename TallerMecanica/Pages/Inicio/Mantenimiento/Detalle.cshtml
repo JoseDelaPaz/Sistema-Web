@@ -1,0 +1,67 @@
+﻿@page
+@model TallerMecanica.Pages.Inicio.DetalleModel
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+
+
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Apellido)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Sexo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Sexo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Telefono)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Telefono)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Direccion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Direccion)
+        </dd>
+        @*<dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Correo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Correo)
+        </dd>*@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Contrasena)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Contrasena)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmpleadoMs.Roles)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoMs.Roles)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="Index" style="cursor:pointer" class="btn btn-secondary btn-sm">Volver A Lista</a>
+
+</div>

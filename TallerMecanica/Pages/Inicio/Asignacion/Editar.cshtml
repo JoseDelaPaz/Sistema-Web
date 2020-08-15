@@ -1,0 +1,59 @@
+﻿@page
+@model TallerMecanica.Pages.Inicio.Asignacion.EditarModel
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Asignacion</h1>
+
+<div class="border">
+
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding:30px">
+            <div class="form-group">
+                <div class="form-group col-6">
+                    <label asp-for="getEmpleadoVehiculos.EmpleadoID"></label>
+                    <select asp-for="getEmpleadoVehiculos.EmpleadoID" asp-items="@(new SelectList(Model.empleadoMs, "ID", "Nombre"))" class="form-control">
+                        <option value="" selected disabled>--Seleccionar--</option>
+                    </select>
+                    <span asp-validation-for="getEmpleadoVehiculos.EmpleadoID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-6">
+                    <label asp-for="getEmpleadoVehiculos.AutomivilID"> </label>
+                    <select asp-for="getEmpleadoVehiculos.AutomivilID" asp-items="@(new SelectList(Model.auto, "ID", "Marca"))" class="form-control" disabled>
+                        <option value="" selected disabled>--Seleccionar--</option>
+                    </select>
+                    <span asp-validation-for="getEmpleadoVehiculos.AutomivilID" class="text-danger"></span>
+                </div>
+                <div class="form-group col-6">
+                    <label asp-for="getEmpleadoVehiculos.Estado"></label>
+                    <select asp-for="getEmpleadoVehiculos.Estado" class="form-control" required>
+                        <option value="Null" selected>Null</option>
+                    </select>
+                </div>
+                <div class="form-group col-6">
+                    <label asp-for="getEmpleadoVehiculos.Detalle_Reparaciion"></label>
+                    <select asp-for="getEmpleadoVehiculos.Detalle_Reparaciion" class="form-control" required>
+                        <option value="Null" selected>Null</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-4 col-md-4">
+                        <button type="submit" value="Actualizar Datos" class="btn btn-primary form-control">
+                            Guardar Datos
+                        </button>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <a asp-page="Index" class="btn btn-success form-control"> Volver lista</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

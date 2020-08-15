@@ -1,0 +1,9 @@
+D:\jose\TallerMecanica\CapaModelos\bin\Debug\netcoreapp3.1\CapaModelos.deps.json
+D:\jose\TallerMecanica\CapaModelos\bin\Debug\netcoreapp3.1\CapaModelos.dll
+D:\jose\TallerMecanica\CapaModelos\bin\Debug\netcoreapp3.1\CapaModelos.pdb
+D:\jose\TallerMecanica\CapaModelos\obj\Debug\netcoreapp3.1\CapaModelos.csprojAssemblyReference.cache
+D:\jose\TallerMecanica\CapaModelos\obj\Debug\netcoreapp3.1\CapaModelos.AssemblyInfoInputs.cache
+D:\jose\TallerMecanica\CapaModelos\obj\Debug\netcoreapp3.1\CapaModelos.AssemblyInfo.cs
+D:\jose\TallerMecanica\CapaModelos\obj\Debug\netcoreapp3.1\CapaModelos.csproj.CoreCompileInputs.cache
+D:\jose\TallerMecanica\CapaModelos\obj\Debug\netcoreapp3.1\CapaModelos.dll
+D:\jose\TallerMecanica\CapaModelos\obj\Debug\netcoreapp3.1\CapaModelos.pdb

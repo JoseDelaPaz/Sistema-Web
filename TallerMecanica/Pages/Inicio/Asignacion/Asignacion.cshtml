@@ -1,0 +1,54 @@
+﻿@page
+@model TallerMecanica.Pages.Inicio.AsignacionModel
+@{
+    ViewData["Title"] = "Asignacion";
+}
+
+<h1>Asignacion</h1>
+
+<div class="border">
+
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding:30px">
+            <div class="form-group">
+                <div class="form-group col-6">
+                    <label asp-for="postEmpleadp.EmpleadoID"></label>
+                    <select asp-for="postEmpleadp.EmpleadoID" asp-items="@(new SelectList(Model.empleadoMs, "ID", "Nombre"))" class="form-control">
+                        <option value="" selected disabled>--Seleccionar--</option>
+                    </select>
+                    <span asp-validation-for="postEmpleadp.EmpleadoID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-6">
+                    <label asp-for="postEmpleadp.AutomivilID"> </label>
+                    <select asp-for="postEmpleadp.AutomivilID" asp-items="@(new SelectList(Model.auto, "ID", "Marca"))" class="form-control">
+                        <option value="" selected disabled>--Seleccionar--</option>
+                    </select>
+                    <span asp-validation-for="postEmpleadp.AutomivilID" class="text-danger"></span>
+                </div>
+                <div class="form-check">
+                    <input asp-for="postEmpleadp.Validacion" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label asp-for="postEmpleadp.Validacion" class="form-check-label" for="gridRadios1">
+                        Validar
+                    </label>
+                    <span asp-validation-for="postEmpleadp.Validacion" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                            <button type="submit" value="Crear Datos" class="btn btn-primary form-control">
+                                Guardar Datos
+                            </button>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a asp-page="Index" class="btn btn-success form-control"> Volver lista</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

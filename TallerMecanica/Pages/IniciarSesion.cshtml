@@ -1,0 +1,35 @@
+﻿@page
+@model TallerMecanica.Pages.IniciarSesionModel
+@{
+    Layout = null;
+}
+
+
+<div class="login-form">
+    <form method="post">
+        <h2>Iniciar Sesion</h2>
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Correo" required asp-for="loginModel.Usuario" />
+        </div>
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Contraseña" required asp-for="loginModel.Password" />
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"  asp-for="loginModel.Recordarme">
+            <label  class="form-check-label" for="gridCheck" asp-for="loginModel.Recordarme">
+            </label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary form-control"> Iniciar Sesion</button>
+        </div>
+    </form>
+</div>
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<link href="~/css/login.css" rel="stylesheet" />

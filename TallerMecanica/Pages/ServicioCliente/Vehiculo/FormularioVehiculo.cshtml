@@ -1,0 +1,90 @@
+﻿@page
+@model TallerMecanica.Pages.ServicioCliente.Vehiculo.FormularioVehiculoModel
+@{
+    ViewData["Title"] = "FormularioVehiculo";
+
+}
+<h2 class="text-info">Formulario de Vehiculos </h2>
+<br />
+
+<div>
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="automovil.Marca"></label>
+                <select asp-for="automovil.Marca" type="text" class="form-control" placeholder="Sexo " tabindex="5">
+                    <option value="" selected disabled>--Seleccinar--</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyunday">Hyunday</option>
+                </select>
+                <span asp-validation-for="automovil.Marca" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="automovil.Modelo"></label>
+                <input asp-for="automovil.Modelo" class="form-control" placeholder="Modelo del Vehiculo">
+                <span asp-validation-for="automovil.Modelo" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6 ">
+                <label asp-for="automovil.Lugar_Fabricacion"></label>
+                <input asp-for="automovil.Lugar_Fabricacion" class="form-control" placeholder="Cuidad de Fabricacion">
+                <span asp-validation-for="automovil.Lugar_Fabricacion" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6 ">
+                <label asp-for="automovil.Matricula"></label>
+                <input asp-for="automovil.Matricula" class="form-control">
+                <span asp-validation-for="automovil.Matricula" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="automovil.ClienteID"> </label>
+                <select asp-for="automovil.ClienteID" asp-items="@(new SelectList(Model.Cliente, "ID", "Nombre"))" class="form-control">
+                    <option value="" selected disabled>--Seleccionar--</option>
+                </select>
+                <span asp-validation-for="automovil.ClienteID" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="automovil.Fecha_Entrada"></label>
+                <input asp-for="automovil.Fecha_Entrada" class="form-control" disabled>
+                <span asp-validation-for="automovil.Fecha_Entrada" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="automovil.Tipo_Transmision"></label>
+                <select asp-for="automovil.Tipo_Transmision" class="form-control">
+                    <option value="" selected disabled>---Seleccione--</option>
+                    <option value="Automtica">Automtica</option>
+                    <option value="Manual">Manual</option>
+                </select>
+                <span asp-validation-for="automovil.Tipo_Transmision" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-2">
+                <label asp-for="automovil.Color"></label>
+                <input asp-for="automovil.Color" class="form-control" id="Color">
+                <span asp-validation-for="automovil.Color" class="text-danger"></span>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label asp-for="automovil.Descripcion_Problema"></label>
+            <textarea asp-for="automovil.Descripcion_Problema" class="form-control" placeholder="Detalles del problema"> </textarea>
+            <span asp-validation-for="automovil.Descripcion_Problema" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <button type="submit" value="Crear Datos" class="btn btn-primary form-control">
+                        Guargar Datos
+                    </button>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <a asp-page="Vehiculo" class="btn btn-success"> Volver lista</a>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
