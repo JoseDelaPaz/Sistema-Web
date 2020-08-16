@@ -1,0 +1,5 @@
+Usuario de administrador por defecto : admin@gmail.com
+contraseña : 12345
+
+Para que éste proyecto funcione en su pc, tienes que cambiar la conexion a la base de datos en el Startup
+y luego hacer un update-database para integral la base de datos.
